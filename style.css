@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+section {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #333333,
+    #333340,
+    #2f334d,
+    #26335b,
+    #0c356a
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.calculator {
+  width: 400px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.26);
+}
+
+.display-field {
+  margin-bottom: 15px;
+}
+
+.display-field input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+}
+
+.first-row,
+.sec-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.first-row input,
+.sec-row input,
+.third-row input,
+.fourth-row input,
+.fifth-row input {
+  flex: 1;
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.26);
+}
+
+.first-row input:hover,
+.sec-row input:hover,
+.third-row input:hover,
+.fourth-row input:hover,
+.fifth-row input:hover {
+  background-color: #27272776;
+  box-shadow: 0 0 20px 0px rgba(91, 91, 91, 0.146);
+}
+
+.fifth-row input:last-child {
+  flex: 2.6;
+}
+
+.blue {
+  color: rgb(83, 83, 241);
+}
+
+.equal {
+  background-color: #0174be;
+}
+
+.equal:hover {
+  background-color: #0064a1 !important;
+}
